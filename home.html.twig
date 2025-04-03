@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Eventopia - Home
+{% endblock %}
+{# ______________________________________navbar__________________________________ #}
+{% block navbar %}
+	<div style="background-color:white; margin-bottom:95px;">
+		{% include 'Front/navbar.html.twig' %}
+	</div>
+{% endblock %}
+{# _______________________________________________________________________________ #}
+
+
+{% block body %}
+	<div style="width: 100%; padding: 80px 20px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1607869861980-da5f9b8b4969?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; text-align: center; margin-bottom: 40px;">
+		<div style="max-width: 800px; margin: 0 auto;">
+			<h2 style="color: white; font-size: 2.8rem; font-weight: 700; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+				Eventopia Where Dreams Become Unforgettable Events
+			</h2>
+			<p style="color: white; font-size: 1.4rem; margin-bottom: 30px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
+				The ultimate platform for perfect event planning
+			</p>
+
+		</div>
+	</div>
+
+
+	<!-- Feature Sections -->
+	<div
+		class="container my-5">
+		<!-- Section 1: Image Right / Text Left -->
+		<div class="row align-items-center mb-5 py-4">
+			<div
+				class="col-md-6 pe-md-5">
+				{# Added right padding #}
+				<h2 style="color: #03045F; font-weight: bold;">Reserve Space and Materials</h2>
+				<p class="lead" style="font-size: 1.1rem;">
+					Eventopia provides a seamless platform to book venues and event materials for your perfect occasion. 
+					                    From conference halls to wedding decorations, we've got everything covered in one place.
+				</p>
+				<a href="#" class="btn btn-primary mt-3" style="background-color: #03045F; border: none;">Explore Venues</a>
+			</div>
+			<div
+				class="col-md-6 ps-md-5">
+				{# Added left padding #}
+				<img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Event Venues" class="img-fluid rounded shadow" style="max-height: 300px; width: 100%; object-fit: cover;">
+			</div>
+		</div>
+
+		<!-- Section 2: Image Left / Text Right -->
+		<div class="row align-items-center mb-5 py-4">
+			<div
+				class="col-md-6 order-md-2 ps-md-5">
+				{# Added left padding #}
+				<h2 style="color: #03045F; font-weight: bold;">Create Your Own Event</h2>
+				<p class="lead" style="font-size: 1.1rem;">
+					Our intuitive event creation tools make planning effortless. Customize every detail, 
+					                    manage invitations, and coordinate with vendors - all from your Eventopia dashboard.
+				</p>
+				<a href="#" class="btn btn-primary mt-3" style="background-color: #03045F; border: none;">Start Creating</a>
+			</div>
+			<div
+				class="col-md-6 order-md-1 pe-md-5">
+				{# Added right padding #}
+				<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Create Events" class="img-fluid rounded shadow" style="max-height: 300px; width: 100%; object-fit: cover;">
+			</div>
+		</div>
+
+		<!-- Section 3: Image Left / Text Right -->
+		<div class="row align-items-center mb-5 py-4">
+			<div
+				class="col-md-6 pe-md-5">
+				{# Added right padding #}
+				<h2 style="color: #03045F; font-weight: bold;">The Best Event Planning Platform</h2>
+				<p class="lead" style="font-size: 1.1rem;">
+					Join thousands of satisfied users who trust Eventopia for their most important occasions. 
+					                    Our award-winning platform and dedicated support team ensure your event will be unforgettable.
+				</p>
+				<a href="#" class="btn btn-primary mt-3" style="background-color: #03045F; border: none;">Why Choose Us</a>
+			</div>
+			<div
+				class="col-md-6 ps-md-5">
+				{# Added left padding #}
+				<img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80" alt="Best Event Planner" class="img-fluid rounded shadow" style="max-height: 300px; width: 100%; object-fit: cover;">
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+
+{% block footer %}
+	{% include 'Front/footer.html.twig' %}
+{% endblock %}

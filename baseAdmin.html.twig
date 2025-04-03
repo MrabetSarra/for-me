@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{{ encore_entry_link_tags('app') }}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			{% block title %}Eventopia Admin
+			{% endblock %}
+		</title>
+
+		{% block stylesheets %}
+			<!-- Google Fonts -->
+			<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+			<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/open-iconic-bootstrap.min.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+		{% endblock %}
+	</head>
+
+	<body class="admin-body">
+		<div
+			class="admin-wrapper">
+			<!-- Sidebar -->
+			{% block sidebar %}
+				{% include 'Admin/sidebar.html.twig' %}
+			{% endblock %}
+
+			<!-- Main Content -->
+			<div class="admin-main">
+				{# <!-- Top Navigation -->
+																								            {% block topnav %}
+																								                {% include 'admin/partials/topnav.html.twig' %}
+																								            {% endblock %} #}
+
+				<!-- Content Wrapper -->
+					<div class="admin-content">{% block body %}{% endblock %} </div>
+
+
+				</div>
+			</div>
+
+			{% block javascripts %}
+				<script src="{{ asset('js/jquery.min.js') }}"></script>
+				<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+				<script src="{{ asset('js/main.js') }}"></script>
+
+			{% endblock %}
+		</body>
+	</html>

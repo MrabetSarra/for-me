@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Eventopia - Admin
+{% endblock %}
+
+{% block navbar %}
+	{% include 'Admin/sidebar.html.twig' %}
+{% endblock %}
+
+{% block body %}
+
+
+	<main class="flex-grow-1 p-4">
+		<h1 class="page-title">Welcome to Dashboard, Admin!</h1>
+
+		<div class="dashboard-summary">
+			<div class="summary-card">
+				<div class="card-icon">
+					<span class="ti-calendar"></span>
+				</div>
+				<div class="card-content">
+					<h3>Total Events</h3>
+					<p>24</p>
+				</div>
+			</div>
+
+			<div class="summary-card">
+				<div class="card-icon">
+					<span class="ti-user"></span>
+				</div>
+				<div class="card-content">
+					<h3>Total Users</h3>
+					<p>156</p>
+				</div>
+			</div>
+
+			<div class="summary-card">
+				<div class="card-icon">
+					<span class="ti-comment"></span>
+				</div>
+				<div class="card-content">
+					<h3>New Feedbacks</h3>
+					<p>12</p>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock %}
+
+{% block footer %}{% endblock %}

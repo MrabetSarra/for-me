@@ -1,0 +1,129 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Eventopia - AboutUs
+{% endblock %}
+
+{% block navbar %}
+	<div style="background-color:white; margin-bottom:95px;">
+		{% include 'Front/navbar.html.twig' %}
+	</div>
+{% endblock %}
+
+{% block body %}
+	<div class="container-fluid mt-5 mb-5" style="padding-left:0%; padding-right:0%;">
+		<div style="width: 100%; text-align: center; margin-bottom: 50px;
+																											 background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+																											 url('https://images.unsplash.com/photo-1531058020387-3be344556be6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+																											 background-size: cover;
+																											 background-position: center;
+																											 padding: 120px 20px;
+																											 box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+
+			<h1 style="color: white; font-weight: 800; font-size: 3.5rem; margin-bottom: 25px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+				More Than Just Events
+			</h1>
+		</div>
+	</div>
+
+	<!-- Team Members Section -->
+	<div class="container py-5">
+		<h2 class="text-center mb-5" style="font-weight: 700; color: #2c3e50;">Meet Our Team</h2>
+		<div
+			class="row justify-content-center">
+			<!-- Team Member 1 -->
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 border-0 shadow-sm">
+					<img src="{{ asset('assets/images/omar.jfif') }}" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Team Member">
+					<div class="card-body text-center">
+						<h5 class="card-title" style="font-weight: 600;">Omar Aguil</h5>
+						<p class="text-muted">CEO & Founder</p>
+						<p class="card-text small">With 15 years in event management, Sarah brings unparalleled expertise to Eventopia.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Team Member 2 -->
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 border-0 shadow-sm">
+					<img src="https://randomuser.me/api/portraits/men/32.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Team Member">
+					<div class="card-body text-center">
+						<h5 class="card-title" style="font-weight: 600;">said leffat</h5>
+						<p class="text-muted">CTO</p>
+						<p class="card-text small">Tech visionary ensuring our platform delivers seamless experiences.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Team Member 3 -->
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 border-0 shadow-sm">
+					<img src="https://randomuser.me/api/portraits/women/68.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Team Member">
+					<div class="card-body text-center">
+						<h5 class="card-title" style="font-weight: 600;">Youssef kthiri</h5>
+						<p class="text-muted">Marketing Director</p>
+						<p class="card-text small">Creative strategist connecting events with their perfect audiences.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Team Member 4 -->
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 border-0 shadow-sm">
+					<img src="https://randomuser.me/api/portraits/men/75.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Team Member">
+					<div class="card-body text-center">
+						<h5 class="card-title" style="font-weight: 600;">Sarra Mrabet</h5>
+						<p class="text-muted">Head of Operations</p>
+						<p class="card-text small">Ensures every event on our platform runs smoothly.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Team Member 5 -->
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 border-0 shadow-sm">
+					<img src="https://randomuser.me/api/portraits/women/90.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Team Member">
+					<div class="card-body text-center">
+						<h5 class="card-title" style="font-weight: 600;">Skander ayari</h5>
+						<p class="text-muted">UX Designer</p>
+						<p class="card-text small">Crafts intuitive experiences for both organizers and attendees.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Platform Features -->
+	<div class="container py-5">
+		<h2 class="text-center mb-5" style="font-weight: 700; color: #2c3e50;">Why Choose Eventopia?</h2>
+		<div class="row">
+			<div class="col-md-4 mb-4">
+				<div class="text-center p-4">
+					<div style="width: 80px; height: 80px; background-color: #e74c3c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+						<i class="fa fa-calendar-check fa-2x text-white"></i>
+					</div>
+					<h4 style="font-weight: 600;">Easy Event Creation</h4>
+					<p>Simple tools to create and manage events of any size in minutes.</p>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="text-center p-4">
+					<div style="width: 80px; height: 80px; background-color: #e74c3c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+						<i class="fa fa-search fa-2x text-white"></i>
+					</div>
+					<h4 style="font-weight: 600;">Smart Discovery</h4>
+					<p>Personalized recommendations to find events you'll love.</p>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="text-center p-4">
+					<div style="width: 80px; height: 80px; background-color: #e74c3c; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+						<i class="fa fa-shield-alt fa-2x text-white"></i>
+					</div>
+					<h4 style="font-weight: 600;">Secure Platform</h4>
+					<p>Advanced security measures to protect your data and transactions.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>{% endblock %}{% block footer %}
+{% include 'Front/footer.html.twig' %}{% endblock %}

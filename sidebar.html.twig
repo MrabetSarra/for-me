@@ -1,0 +1,26 @@
+<aside class="admin-sidebar">
+	<div class="sidebar-header">
+		<h3 class="brand">
+			<i class="ti-unlink"></i>
+			<span>Eventopia</span>
+		</h3>
+	</div>
+
+	<nav class="sidebar-nav">
+		<ul>
+			<li class="{{ app.request.get('_route') == 'admin_dashboard' ? 'active' }}">
+				<a href="{{ path('admin_dashboard') }}">
+					<i class="ti-home"></i>
+					<span>Dashboard</span>
+				</a>
+			</li>
+			<li class="{{ app.request.get('_route') starts with 'admin_events' ? 'active' }}">
+				<a href="#">
+					<i class="ti-calendar"></i>
+					<span>Events</span>
+				</a>
+			</li>
+			<!-- Add other menu items similarly -->
+		</ul>
+	</nav>
+</aside>
